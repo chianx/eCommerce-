@@ -1,0 +1,179 @@
+.productDetails {
+    background-color: white;
+    width: 100vw;
+    max-width: 100%;
+    padding: 2vmax;
+    box-sizing: border-box;
+    display:flex;
+}
+
+.productDetails > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    padding:2vmax;
+    box-sizing: border-box;
+    border: 1px solid white;
+}
+
+.productDetails > div:last-child {
+    align-items: flex-start;
+}
+.productDetails > div:first-child {
+    align-items: flex-end;
+}
+
+.carouselImageDiv {
+    width:100%;    
+    aspect-ratio: 4/5;
+    display: flex;
+    background-color: #f0f0f0;
+    align-items:center;
+}
+.CarouselImage {
+    width:28vw;
+    height:auto;
+    /* max-width:450px; */
+}
+.detailsBlock1 > h2 {
+    color:rgb(54, 54, 54);
+    font: 600 2rem "Roboto";
+}
+.detailsBlock1 > p {
+    color: rgba(54, 54, 54, 0.582);
+    font: 200 0.7rem cursive;
+}
+.detailsBlock2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-top:0.5px solid #a0a0a0;
+    border-bottom:0.5px solid #a0a0a0;
+    width: 70%;
+    padding:1vmax 0;
+}
+.detailsBlock2 > span {
+    color:rgba(54, 54, 54, 0.582);
+    font : 200 0.9rem cursive;
+    padding-left:3px
+}
+.detailsBlock3 {
+    width:70%;
+}
+.detailsBlock3 > h1 {
+    color:rgba(17, 17, 17);
+    font: 300 1.8rem "Franklin Gothic Medium";
+    margin: 1vmax 0;
+}
+.detailsBlock3 > h1 > span{
+    color: #a0a0a0;
+    font:1rem "Roboto";
+    font-weight: 100;
+    margin: 1vmax 0;
+    text-decoration: line-through;
+}
+.detailsBlock31 {
+    display: flex;
+    align-items: center;
+}
+.detailsBlock311 {
+    border:0.3px solid #808080;
+}
+.detailsBlock311 > button {
+    border:none;
+    background-color: #808080;
+    padding:5px;
+    width:25px;
+    cursor: pointer;
+    color:white;
+    transition: all 0.5s;
+}
+.detailsBlock311 > button:hover {
+    background-color: #a0a0a0;
+}
+.detailsBlock311 > input {
+    border:none;
+    padding:5px;
+    width:25px;
+    text-align:center;
+    outline:none;
+    font:400 0.9rem "Roboto";
+    color:rgba(0,0, 0, 0.74);
+}
+.detailsBlock31 > button:last-child {
+    border:none;
+    cursor: pointer;
+    transition: all 0.5s;
+    color:white;
+    background-color: tomato;
+    font:500 1rem "Roboto";
+    border-radius: 20px;
+    padding: 5px 7px;
+    margin:1vmax;
+    outline:none; 
+}
+
+.detailsBlock4 {
+    color:rgba(0,0,0,0.89);
+    font:500 1.2rem sans-serif;
+    width:70%;
+}
+.detailsBlock4 > p {
+    color: rgba(0,0,0, 0.53);
+    font:300 0.9rem sans-serif;
+    margin-top:3px;
+}
+
+.submitReview {
+    border:none;
+    background-color: tomato;
+    font: 500 1rem "Robot";
+    border-radius : 20px;
+    padding: 5px 7px;
+    margin: 10px 0;
+    color: white;
+    cursor:poiner;
+    transition: all 0.5s;
+    outline:none;
+}
+.submitReview:hover {
+    background-color: rgb(197, 68, 45);
+    transform: scale(1.1);
+}
+.reviewHeading {
+    color:#000000be;
+    font:500 1.2rem "Roboto";
+    text-align:center;
+    border-bottom: 1px solid #000000be;
+    padding: 10px; 
+    width:20%;
+    /* margin:auto; */
+    margin-left:2vmax;
+}
+
+@media screen and (max-width: 768px) {
+    .productDetails {
+        flex-direction: column;
+        height:unset;
+        padding:0;
+    }
+    .detailsBlock1, .detailsBlock2, .detailsBlock3, .detailsBlock4 {
+        width:100%;
+    }
+    .detailsBlock1 > h2{
+        font-size: 1.5rem;
+    }
+    .productDetails > div:first-child {
+        align-items: center;
+        width:100%;
+        padding:0;
+    }
+    .CarouselImage {
+        width:100vw;
+        height:auto;
+        object-fit: cover;
+    }
+
+}

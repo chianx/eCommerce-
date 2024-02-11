@@ -1,0 +1,49 @@
+.reviewCard {
+    flex:none;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.22);
+    border: 1px solid rgba(56, 56, 56, 0.116);
+    width : 29%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:10px;
+    padding:10px;
+}
+.reviewCard > div > img {
+    width:30%;
+}
+.reviewCard > div {
+    display: flex;
+    margin-bottom:15px;
+}
+.reviewCard >div >div {
+
+}
+.reviewCard > div > div > p {
+    color: rgba(0,0,0, 0.83);
+    font:600 1rem "Roboto";
+    margin-top:10px;
+    margin-bottom:0;
+}
+.reviewCard > span {
+    color:rgba(0,0,0, 0.445);
+    font:300 0.9rem sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .reviewCard {
+        width:94%;
+    }
+    .reviewCard > div > img {
+        width:27%;
+    }
+    .reviewCard > div {
+        margin-bottom:5px;
+    }
+    .reviewCard > div > div > p {
+        font-size: 0.8rem;
+    }
+    .reviewCard > span {
+        font-size: 0.7rem;
+    }
+}

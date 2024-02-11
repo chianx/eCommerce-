@@ -1,0 +1,124 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: #333;
+    padding: 5px 13px;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for the entire navbar */
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .hamburger-icon {
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .logo {
+    max-width: 100px;
+    cursor: pointer;
+  }
+  
+  .drawer {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Start off-screen */
+    width: 50%; /* Default width for large devices */
+    max-width: 250px; /* Max width for small devices */
+    height: 100vh;
+    background-color: #f0f0f0; /* Set your preferred background color */
+    transition: left 0.3s ease-in-out;
+    z-index: 999;
+  }
+  
+  .drawer.open {
+    left: 0;
+  }
+  
+  .drawer-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  
+  .close-icon {
+    cursor: pointer;
+  }
+  
+  .drawer-content {
+    padding: 20px;
+  }
+  
+  .nav-link {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .right-section {
+    display: flex;
+    align-self: center;
+    align-items: center;
+  }
+  
+  .icon {
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    width:35%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    margin-right: 20px;
+  }
+  
+  .search-icon {
+    margin-right: 5px;
+    margin-left:10px
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+  }
+  
+  /* Media query for small screens */
+  @media only screen and (max-width: 768px) {
+    .navbar {
+      /* flex-direction: column; */
+      align-items: flex-start;
+      padding: 10px 20px;
+    }
+  
+    .search-bar {
+      margin-top: 10px;
+      margin-right: 0;
+    }
+  }
+  
+  /* Media query for medium to large screens */
+  @media only screen and (min-width: 769px) {
+    .navbar {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  
+    .search-bar {
+      margin-top: 0;
+    }
+    .mobile-logo {
+    width:70px; height:auto;
+  }
+  }
+
+  
